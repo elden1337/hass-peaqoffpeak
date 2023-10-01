@@ -2,16 +2,16 @@
 from __future__ import annotations
 from typing import TYPE_CHECKING
 
-from custom_components.peaqnext.service.models.consumption_type import ConsumptionType
+from custom_components.peaqoffpeak.service.models.consumption_type import ConsumptionType
 from ..const import DOMAIN, HUB
 from datetime import datetime, timedelta
 
 if TYPE_CHECKING:
-    from custom_components.peaqnext.service.hub import Hub
+    from custom_components.peaqoffpeak.service.hub import Hub
 from homeassistant.components.sensor import SensorEntity
 import logging
-from custom_components.peaqnext.service.models.hour_model import HourModel
-from custom_components.peaqnext.util import nametoid
+from custom_components.peaqoffpeak.service.models.hour_model import HourModel
+from custom_components.peaqoffpeak.util import nametoid
 
 _LOGGER = logging.getLogger(__name__)
 

@@ -5,8 +5,8 @@ from datetime import timedelta
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 
-from custom_components.peaqnext.const import DOMAIN
-from custom_components.peaqnext.sensors.next_sensor import PeaqNextSensor
+from custom_components.peaqoffpeak.const import DOMAIN
+from custom_components.peaqoffpeak.sensors.next_sensor import PeaqNextSensor
 
 _LOGGER = logging.getLogger(__name__)
 SCAN_INTERVAL = timedelta(seconds=4)

@@ -8,11 +8,11 @@ import homeassistant.helpers.config_validation as cv
 import voluptuous as vol
 from homeassistant import config_entries
 from homeassistant.core import callback
-from custom_components.peaqnext.service.models.consumption_type import (
+from custom_components.peaqoffpeak.service.models.consumption_type import (
     CONSUMPTIONTYPE_NAMES,
 )
-from custom_components.peaqnext.service.models.next_sensor.enums.calculate_by import CalculateBy
-from custom_components.peaqnext.service.models.next_sensor.enums.update_by import UpdateBy
+from custom_components.peaqoffpeak.service.models.next_sensor.enums.calculate_by import CalculateBy
+from custom_components.peaqoffpeak.service.models.next_sensor.enums.update_by import UpdateBy
 
 from .const import (
     CONF_DEDUCT_PRICE,

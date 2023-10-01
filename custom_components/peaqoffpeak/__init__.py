@@ -6,13 +6,13 @@ import logging
 from homeassistant.config_entries import ConfigEntry  # pylint: disable=import-error
 from homeassistant.helpers.device_registry import DeviceEntry  # pylint: disable=import-error
 from homeassistant.core import HomeAssistant
-from custom_components.peaqnext.service.models.next_sensor.enums.calculate_by import CalculateBy
-from custom_components.peaqnext.service.models.next_sensor.enums.update_by import UpdateBy
-from custom_components.peaqnext.services import async_prepare_register_services  # pylint: disable=import-error
-from custom_components.peaqnext.util import nametoid
-from custom_components.peaqnext.service.hub import Hub
-from custom_components.peaqnext.service.models.consumption_type import ConsumptionType
-from custom_components.peaqnext.service.models.sensor_model import NextSensor
+from custom_components.peaqoffpeak.service.models.next_sensor.enums.calculate_by import CalculateBy
+from custom_components.peaqoffpeak.service.models.next_sensor.enums.update_by import UpdateBy
+from custom_components.peaqoffpeak.services import async_prepare_register_services  # pylint: disable=import-error
+from custom_components.peaqoffpeak.util import nametoid
+from custom_components.peaqoffpeak.service.hub import Hub
+from custom_components.peaqoffpeak.service.models.consumption_type import ConsumptionType
+from custom_components.peaqoffpeak.service.models.sensor_model import NextSensor
 from .const import (CONF_CALCULATE_BY, CONF_CUSTOM_CONSUMPTION_PATTERN, CONF_DEDUCT_PRICE, CONF_UPDATE_BY, DOMAIN, PLATFORMS, HUB, CONF_NONHOURS_END, CONF_CONSUMPTION_TYPE, CONF_NAME, CONF_NONHOURS_START, CONF_SENSORS, CONF_TOTAL_CONSUMPTION_IN_KWH, CONF_TOTAL_DURATION_IN_MINUTES, CONF_CLOSEST_CHEAP)
 from datetime import datetime
 from uuid import uuid4

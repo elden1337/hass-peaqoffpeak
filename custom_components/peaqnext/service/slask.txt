@@ -1,0 +1,6 @@
+SELECT DATETIME(ROUND(created_ts), 'unixepoch', 'localtime') AS isodate, s.state
+FROM "statistics_meta" sa
+inner join "statistics" s on s.metadata_id = sa.id
+where sa.statistic_id = "sensor.nibe_energy_hourly"
+order by  s.id desc
+limit 100

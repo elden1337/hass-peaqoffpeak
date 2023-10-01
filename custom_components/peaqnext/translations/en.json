@@ -1,0 +1,86 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "add_another_sensor": "Add another sensor?",
+                    "name": "Name of the sensor.",
+                    "consumption_type": "Pick consumption pattern",
+                    "custom_consumption_pattern": "(optional), add custom pattern as , separated list of values. e.g. 0.1,0.2 etc.",
+                    "total_duration_in_minutes": "Cycle duration in minutes",
+                    "total_consumption_in_kwh": "Expected consumption in kWh",
+                    "non_hours_start": "Can't start in these hours",
+                    "non_hours_end": "Can't end in these hours",
+                    "closest_cheap_hour": "(optional) Hours to cheapest state, default 12h",
+                    "deduct_price": "(optional) Deduct price from hourly cost, default 0",
+                    "update_by": "Choose if sensor should update every minute or every hour",
+                    "calculate_by": "Choose if sensor should calculate by start- or end-time"
+                },
+                "description": "Add a Peaqnext-sensor, check the box to add another.",
+                "title": "Add Sensors"
+            }
+        }
+    },
+    "options": {
+        "error": {
+            "invalid_path": "The path provided is not valid. Should be in the format `user/repo-name` and should be a valid github repository."
+        },
+        "step": {
+            "init": {
+                "title": "Manage Repos",
+                "data": {
+                    "repos": "Existing Repos: Uncheck any repos you want to remove.",
+                    "path": "New Repo: Path to the repository e.g. home-assistant-core",
+                    "name": "New Repo: Name of the sensor."
+                },
+                "description": "Remove existing repos or add a new repo."
+            }
+        }
+    },
+    "services":{
+        "override_sensor_data": {
+            "name": "Override Sensor Data",
+            "description": "bla bla bla",
+            "fields": {
+                "sensor_entity":{
+                    "name": "Sensor Entity",
+                    "description": "Entity id"
+                },
+                "duration_in_minutes":{
+                    "name": "Duration in minutes",
+                    "description": "The new duration in minutes  (optional)"
+                },
+                "consumption_in_kwh":{
+                    "name": "Consumption in kwh",
+                    "description": "The new consumption in kwh (optional)"
+                },
+                "custom_consumption_pattern":{
+                    "name": "Custom consumption pattern",
+                    "description": "The new custom consumption pattern (optional and only applies to sensors with custom_pattern)"
+                },
+                "non_hours_start":{
+                    "name": "Non hours start",
+                    "description": "The new non_hours start (optional)"
+                },
+                "non_hours_end":{
+                    "name": "Non hours end",
+                    "description": "The new non_hours end (optional)"
+                },
+                "timeout": {
+                    "name": "Timeout",
+                    "description": "Timeout for the override (optional), in hours or as datetime"
+                }
+            }
+        }, 
+        "cancel_override": {
+            "name": "Cancel Override",
+            "description": "bla bla bla",
+            "fields": {
+                "sensor_entity":{
+                    "name": "Sensor Entity",
+                    "description": "Entity id"
+                }
+            }
+        }
+    }
+}

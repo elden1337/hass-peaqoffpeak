@@ -1,0 +1,19 @@
+{
+    "domain": "peaqoffpeak",
+    "name": "peaqoffpeak",
+    "after_dependencies": [
+        "recorder"
+        ],
+    "codeowners": [
+        "@elden1337"
+    ],
+    "config_flow": true,
+    "documentation": "https://github.com/elden1337/hass-peaqoffpeak",
+    "integration_type": "hub",
+    "iot_class": "cloud_polling",
+    "issue_tracker": "https://github.com/elden1337/hass-peaqoffpeak/issues",
+    "requirements": [
+        "peaqoffpeak==0.1.0"
+      ],
+    "version": "0.1.0"
+}
